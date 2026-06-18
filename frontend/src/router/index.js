@@ -7,6 +7,7 @@ import HardwareCheck from '../views/HardwareCheck.vue'
 import AdminDashboard from '../views/AdminDashboard.vue'
 import DocConsult from '../views/docConsult.vue'
 import DocPrescribe from '../views/docPrescribe.vue'
+import DocDashboard from '../views/docDashboard.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -14,8 +15,9 @@ const routes = [
   { path: '/register', name: 'Register', component: Register },
   { path: '/forget-password', name: 'ForgetPassword', component: ForgetPassword },
   { path: '/hardware-check', name: 'HardwareCheck', component: HardwareCheck },
-  { path: '/admin-dashboard', name: 'AdminDashboard', component: AdminDashboard }
-  { path: '/doc-consult', name: 'DocConsult', component: DocConsult }
+  { path: '/admin-dashboard', name: 'AdminDashboard', component: AdminDashboard },
+  { path: '/doc-dashboard', name: 'DocDashboard', component: DocDashboard },
+  { path: '/doc-consult', name: 'DocConsult', component: DocConsult },
   { path: '/doc-prescribe', name: 'DocPrescribe', component: DocPrescribe }
 ]
 

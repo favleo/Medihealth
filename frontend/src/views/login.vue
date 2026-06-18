@@ -50,7 +50,11 @@ const handleLogin = () => {
   // Exact match string verification
   if (email.value === 'admin@medihealth.com' && password.value === 'pass123') {
     router.push('/admin-dashboard')
-  } else {
+  }
+  if(email.value === 'johndoe@medihealth.com' && password.value === 'uwu'){//love to be lazy
+    router.push('/doc-dashboard')
+  } 
+  else {
     alert(`Invalid credentials! You typed: ${email.value}`)
   }
 }
